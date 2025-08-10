@@ -10,6 +10,11 @@ urlpatterns = [
         name='lista'
     ),
     path(
+        'buscar/',
+        PersonaSearchView.as_view(),
+        name='buscar'
+    ),
+    path(
         'detalle/<int:pk>/',
         PersonaDetailView.as_view(),
         name='detalle'
